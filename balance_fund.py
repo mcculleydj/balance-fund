@@ -27,13 +27,9 @@ for k in target_pcts:
 	except:
 		sys.exit('"%s" is not a valid input.' % v)
 
-target_amts = {}
-for k in target_pcts:
-	target_amts[k] = float(total) * target_pcts[k] / 100.0
+target_amts = {k : float(total) * target_pcts[k] / 100.0 for k in target_pcts}
 
-diffs = {}
-for k in target_amts:
-	diffs[k] = int(target_amts[k] - current_amts[k])
+diffs = {k : int(target_amts[k] - current_amts[k]) for k in target_amts}
 
 for k in diffs:
 	print('Invest ${0:,} in {1}.'.format(diffs[k], k))
