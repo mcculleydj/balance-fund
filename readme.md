@@ -1,1 +1,0 @@
-A repository for code used to make managing personal finances a little easier.
