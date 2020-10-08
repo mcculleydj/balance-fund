@@ -3,15 +3,15 @@
 # 7/21/16        #
 ################## Purpose ##################
 # Simple script to balance a personally
-# managed target retirment account.
+# managed target retirement account.
 #############################################
 
 import sys
 
-target_pcts = {'US Stocks' : 54.3,
-               'Intl Stocks' : 35.8,
-               'US Bonds' : 6.9,
-               'Intl Bonds': 3.0}
+target_pcts = {'US Stocks' : 55.3,
+               'Intl Stocks' : 35.6,
+               'US Bonds' : 6.2,
+               'Intl Bonds': 2.9}
 
 total = input('Enter total value of portfolio including money to invest: ')
 try:
